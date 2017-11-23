@@ -17,6 +17,7 @@ comments:
 
   # Text to use as the commit message or pull request title. Accepts placeholders.
   commitMessage: "Add Staticman data"
+  commitMessage: "Add Staticman data"
 
   # (*) REQUIRED
   #
