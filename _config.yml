@@ -1,16 +1,13 @@
 ---
-title: imaginatecreative.github.io
+title:  imaginatecreative.github.io
 timezone: UTC
 collections:
-  people:
-    title: People
-    output: true
   posts:
     title: Posts
     output: true
   uploads:
     title: Uploads
     output: true
-name: Hank Quinlan, Horrible Cop
+name: Jekyll Tech Stack
 markdown: kramdown
 permalink: "/blog/:year/:month/:day/:title"
