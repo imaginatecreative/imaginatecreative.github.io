@@ -12,31 +12,71 @@
 //
 // Styleguide colours.brand
 
-
 // Grid settings
-$enable-flex:           true;
-$main-sm-columns:       12;
-$sidebar-sm-columns:    4;
+$enable-flex: true;
+$main-sm-columns: 12;
+$sidebar-sm-columns: 4;
 
 // Colors
-$brand-one: #FA6900;
-$brand-two: #F38630;
-$brand-three: #69d2e7;
-$brand-four: #A7DBD8;
-$brand-five: #E0E4CC;
+$brand-one: #FA6900 !default;
+$brand-two: #F38630 !default;
+$brand-three: #69d2e7 !default;
+$brand-four: #A7DBD8 !default;
+$brand-five: #E0E4CC !default;
 
-// Base Colors
+// Grey Colors
 //
 // Weight: 2
 //
-// Base primary colors for branding.
+// Base colors for UI & Utility.
 //
-// $text-colour - #2b2b2b;  Text Colour
-//$white -  #ffffff;  White
-//$black - #000000; Black
+//  $text-colour - #2b2b2b;  Text Colour
+//  $black                - #000; Black
+//  $greyDarker           - #222; Darker Grey
+//  $greyDark             - #333; Dark Grey
+//  $grey                 - #555; Grey
+//  $greyLight:           - #999; Light Grey
+//  $greyLighter          - #eee; Lightest Grey
+//  $white                - #fff; White
 //
-// Styleguide colours.base
+// Styleguide colours.greys
 
+// Greys
+// ------------------------
 $text-colour: #2b2b2b;
-$white: #ffffff;
-$black:#000000;
+$black: #000;
+$grayDarker: #222;
+$grayDark: #333;
+$gray: #555;
+$grayLight: #999;
+$grayLighter: #eee;
+$white: #fff;
+
+// Accent Colors
+//
+// Weight: 3
+//
+// Accent colors for UI & Utility.
+//
+//  $blue - #049cdb; Blue
+//  $blueDark - #0064cd; Dark Blue
+//  $green - #46a546; Green
+//  $red - #9d261d; Red
+//  $yellow - #ffc40d; Yellow
+//  $orange - #f89406; Orange
+//  $pink - #c3325f; Pink
+//  $purple - #7a43b6; Purple
+//
+// Styleguide colours.accents
+
+// Accent colors
+// -------------------------
+$blue: #049cdb;
+$blueDark: #0064cd;
+$green: #46a546;
+$red: #9d261d;
+$yellow: #ffc40d;
+$orange: #f89406;
+$pink: #c3325f;
+$purple: #7a43b6;
+

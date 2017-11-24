@@ -1,108 +1,61 @@
-// Link Styles
-//
-// Weight: 1
-// A normal Anchor tag
-//
-// Markup:
-// <a>Link</a>
-//
-// :hover             - Subtle hover highlight.
-//
-//
-//
-// Styleguide buttons.link
-a {
-  transition: color .4s;
-  color: $brand-one;
-  cursor: pointer;
-}
-
-a:link,
-a:visited {
-  color: darken($brand-one, 10%);
-}
-
-a:hover {
-  color: lighten($brand-one, 10%)
-}
-
-a:active {
-  transition: color .3s;
-  color: lighten($brand-one, 40%)
-}
-
-.link {
-  text-decoration: none;
-}
-// Primary Styles
-//
-// Primary call to action
+// Buttons
 //
 // Weight: 1
 //
-// Markup:
-// <a class="primary_cta">Button</a>
+// Button styles can be applied to anything with the `.btn` class applied.
+// However, typically you'll want to apply these to only `<a>` and `<button>` elements for the best rendering.
 //
-// Styleguide buttons.primary
-a.primary_cta, span.primary_cta > a, input[type=submit]{
+// Base styles & states
+//
+// :hover       - Hover state.
+// :active      - Active state.
+// .disabled    - Disabled button. If you use `<button>` element, that is acceptable to add `disabled` attribute instead.
+//
+// Markup:
+// <button type="submit" class="btn btn-primary {{modifier_class}}">Button</button>
+// <button type="submit" class="btn {{modifier_class}}">Button</button>
+//
+// Styleguide components.buttons
+
+
+.btn {
   display: inline-block;
-  padding: 10px 15px;
-  margin: 0;
-  background-color: $brand-three;
-  color: $white;
+  padding: 15px 30px;
+  margin-bottom: 0; // For input.btn
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
   font-size: 1em;
-  font-weight: 400;
-  text-transform: uppercase;
-  cursor: pointer;
-  text-decoration: none;
-  letter-spacing: 1px;
-  border: none;
-  transition-property: background-color;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-in-out;
-  transition-delay: 0.2s;
-  &:hover {
-    background-color: rgba($brand-three, 0.5);
+  color: white;
+  background-color: orange;
+  // Hover/focus state
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    background-position: 0 -15px;
+    background-color: green;
+
   }
-  @media only screen and (max-width: 768px) {
-    padding: 15px 25px;
+
+  // Active state
+  &.active,
+  &:active {
+    background-image: none;
+    outline: 0;
+    background-color: red;
   }
+
+  // Disabled state
+  &.disabled,
+  &[disabled] {
+    cursor: default;
+    background-image: none;
+    background-color: lightgrey;
+  }
+  &.btn-primary{
+    padding: 15px 30px;
+    font-size: 1.5em;
+  }
+
 }
-// Secondary Styles
-//
-// Secondary call to action
-//
-// Weight: 2
-//
-// Markup:
-// <a class="secondary_cta">Button</a>
-//
-// Styleguide buttons.secondary
-a.secondary_cta, span.secondary_cta > a {
-  display: inline-block;
-  padding: 10px 15px;
-  margin: 0px;
-  margin-bottom:5px;
 
-  background-color: $brand-three;
-  color: $white;
-
-  font-size: 0.8em;
-  font-weight: 400;
-  text-transform: uppercase;
-  cursor: pointer;
-  text-decoration: none;
-  letter-spacing: 1px;
-
-  transition-property: background-color;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-in-out;
-  transition-delay: 0.2s;
-
-  &:hover {
-    background-color: rgba($brand-three, 0.5);
-  }
-  @media only screen and (max-width: 768px) {
-    padding: 10px 20px;
-  }
-}
