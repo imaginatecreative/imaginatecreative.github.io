@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700');
+
+body {
+  text-rendering: optimizeLegibility;
+}
+
+.foo {
+  text-rendering: optimizeSpeed;
+}
+
+body {
+  -webkit-font-smoothing: none;
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+body,
+input,
+button {
+  -webkit-font-smoothing: antialiased;
+}
+
+p {
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-family:'Helvetica', 'Arial', 'Sans-Serif';}
+
+// Heading One Styles
+//
+// Hero Text
+//
+// Weight: 1
+//
+// Markup:
+// <h1>Heading One</h1>
+//
+// Styleguide typography.heading-one
+h1 {
+  font-size: 2em; /* 2*16 = 32 */
+}
+
+// Heading Two Styles
+//
+// Hero Text
+//
+// Weight: 2
+//
+// Markup:
+// <h2>Heading Two</h2>
+//
+// Styleguide typography.heading-two
+h2 {
+  font-size: 1.5em; /* 1.5*16 = 24 */
+}
+
+// Heading Three Styles
+//
+// Smaller Sub Heading Text
+//
+// Weight: 3
+//
+// Markup:
+// <h3>Heading Three</h3>
+//
+// Styleguide typography.heading-three
+h3 {
+  font-size: 1.17em; /* 1.17*16 = 18.72 */
+}
+
+// Heading Four Styles
+//
+// Heading Text
+//
+// Weight: 4
+//
+// Markup:
+// <h4>Heading Four</h4>
+//
+// Styleguide typography.heading-four
+h4 {
+  font-size: 1em; /* 1*16 = 16 */
+}
+
+// Heading Five Styles
+//
+// Heading Text
+//
+// Weight: 5
+//
+// Markup:
+// <h5>Heading Five</h5>
+//
+// Styleguide typography.heading-five
+h5 {
+  font-size: 0.83em; /* 0.83*16 = 13.28 */
+}
+
+// Heading Six Styles
+//
+// Smallest Heading Text
+//
+// Weight: 6
+//
+// Markup:
+// <h6>Heading Six</h6>
+//
+// Styleguide typography.heading-six
+h6 {
+  font-size: 0.75em; /* 0.75*16 = 12 */
+}
+
+// Paragraph
+//
+// Paragraphs usually form the bare bones of an HTML document; their styling can make or break the readability of content. As a bare minimum, they require good line-height and good spacing.
+//
+// Weight: 7
+//
+// Markup:
+// <p>Facilis porro ab illo voluptatibus sint dignissimos.</p>
+//
+// Styleguide typography.paragraph
+
+p {
+  line-height: 1.5;
+  margin: 0 0 1em;
+}
+// Unordered List Styles
+//
+// list of item, perhaps steps or components
+//
+// Weight: 7
+//
+// Markup:
+// <ul>
+//    <li>Item</li>
+//    <li>Item</li>
+//    <li>Item</li>
+//    <li>Item</li>
+// </ul>
+//
+// Styleguide typography.unordered-list
+ul {
+  font-size: 1em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  li {
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-weight: 300;
+  }
+}
+
+
+ul.posts {
+  margin: 20px auto 40px;
+  font-size: 1.5em;
+}
+
+ul.posts li {
+  list-style: none;
+}
+
+//However, printed publications (like, you know... books) more often go with indented paragraphs,
+//which we can get by using the following:
+
+.indent p {
+  margin: 0;
+}
+
+.indent p + p {
+  text-indent: 2em;
+}
+
+p {
+  word-break: break-all;
+  /* Non standard for webkit */
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+a,
+a:visited {
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+.tag{
+  font-size:100%;
+}
+code,
+pre {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+strong {
+  font-weight: 700;
+}
+
+blockquote {
+  width: 80%;
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-bottom: $brand-one 2px solid;
+  border-left: $brand-one 2px solid;
+  * {
+    margin-bottom: 0px;
+  }
+}
+
+

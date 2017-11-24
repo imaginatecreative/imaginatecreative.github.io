@@ -1,0 +1,12 @@
+{
+  "title": "Static Site Pattern Library",
+
+  "source": "scss/",
+
+  "destination": "styleguide/",
+
+  "css": [
+    "../css/main.css"
+  ],
+  "builder": "node_modules/michelangelo/kss_styleguide/custom-template/"
+}

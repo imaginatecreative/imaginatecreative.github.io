@@ -1,0 +1,24 @@
+//BEM
+//.block            represents the higher level of an abstraction or component.
+//.block__element   represents a descendent of .block that helps form .block as a whole.
+//.block--modifier  represents a different state or version of .block.
+
+.block {
+}
+
+.block__element {
+}
+
+.block--modifier {
+}
+
+html {
+  overflow-x: hidden;
+}
+
+
+body {
+  margin: 60px auto;
+  width: 70%;
+}
+
